@@ -260,3 +260,5 @@ paket-files/
 __pycache__/
 *.pyc
 /Internety/env
+/Internety/blog/migrations
+*.sqlite3
