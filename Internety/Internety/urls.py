@@ -19,5 +19,5 @@ urlpatterns = [
 
     # Uncomment the next line to enable the admin:
     path('admin/', admin.site.urls),
-    path('blog/', include('blog.urls')), 
+    path('blog/', include('blog.urls')),
 ]
