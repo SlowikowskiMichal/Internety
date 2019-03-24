@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Internety", "Internety\Internety.pyproj", "{C3AEF06D-45FF-485D-AD6C-86E08071AC5B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1C5C1B55-8927-4303-8B0B-67135DBAB6FD}"
+	ProjectSection(SolutionItems) = preProject
+		Internety\blog\templates\blog\base.html = Internety\blog\templates\blog\base.html
+		Internety\blog\templates\blog\post\detail.html = Internety\blog\templates\blog\post\detail.html
+		Internety\blog\templates\blog\post\list.html = Internety\blog\templates\blog\post\list.html
+		Internety\blog\templates\blog\post\share.html = Internety\blog\templates\blog\post\share.html
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
