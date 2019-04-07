@@ -42,6 +42,12 @@
     <Compile Include="blog\apps.py" />
     <Compile Include="blog\migrations\__init__.py" />
     <Compile Include="blog\models.py" />
+    <Compile Include="blog\templatetags\blog_tags.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="blog\templatetags\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="blog\tests.py" />
     <Compile Include="blog\views.py" />
     <Compile Include="blog\__init__.py" />
@@ -52,12 +58,21 @@
     <Compile Include="Internety\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="blog\templates\blog\index.html" />
+    <Content Include="blog\templates\blog\base.html" />
+    <Content Include="blog\templates\blog\post\detail.html" />
+    <Content Include="blog\templates\blog\post\latest_post.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="blog\templates\blog\post\list.html" />
+    <Content Include="blog\templates\blog\post\share.html" />
+    <Content Include="blog\templates\pagination.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="blog\" />
     <Folder Include="blog\migrations\" />
+    <Folder Include="blog\templates\blog\post\" />
+    <Folder Include="blog\templatetags\" />
     <Folder Include="blog\templates\" />
     <Folder Include="blog\templates\blog\" />
     <Folder Include="Internety\" />
