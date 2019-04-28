@@ -2,23 +2,62 @@ body {
     margin: 0;
     padding: 0;
     font-family: helvetica, sans-serif;
-    background-color: #fefefe
+    background-image: linear-gradient(to right, #262626, #006494);
+    color: #ffffff;
+}
+
+a.title {
+    color: #ffefc2;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fb5300;
+    text-decoration: solid;
+    font-family: Impact, helvetica, sans-serif;
+}
+
+    a.title:hover {
+        color: #fff5d9;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fb5300;
+        text-decoration: solid;
+        font-family: Impact, helvetica, sans-serif;
+    }
+
+img.title{
+    height: 30px;
+    width: auto;
+}
+
+.post {
+    border-bottom: 1px solid #f19953
+}
+
+.postbody {
+    margin: 0;
+    padding-left: 10px;
+    border-left: 5px solid #ffdd63
 }
 
 a {
-    color: #00abff;
+    color: #ff6919;
     text-decoration: none;
 }
 
+    a:hover {
+        color: #ffdd63;
+        text-decoration: dotted;
+    }
+
 h1 {
     font-weight: normal;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 5px solid #ff6919;
     padding: 0 0 10px 0;
+    color: #e94f37;
 }
 
 h2 {
-    font-weight: normal;
+    font-weight: bold;
     margin: 30px 0 0;
+    
 }
 
 #content {
@@ -31,15 +70,65 @@ h2 {
     float: right;
     width: 30%;
     padding: 10px;
-    background: #efefef;
+    background: #006494;
     height: 100%;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-color: #197bbd;
+    border-left-width: 4px;
+    border-bottom-width: 4px;
+    border-radius: 0px 0px 0px 50px;
+    color: #f4f4f4;
 }
 
+img.sidebar {
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width: auto;
+}
+
+a.sidebar {
+    color: #ffdd63;
+}
+
+a.sidebar:visited {
+    color: #f5e2c8;
+}
+
+    a.sidebar:hover {
+        color: #f95738;
+    }
+
+
+p.tags {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 12px;
+}
+
+a.tags {
+    color: #4a95db;
+}
+
+    a.tags:visited {
+        color: #abd6ff;
+    }
+
+a.tags:hover {
+    color: #0057c0;
+}
+
+
 p.date {
-    color: #ccc;
+    color: #c7f2ff;
     font-family: georgia, serif;
     font-size: 12px;
     font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* pagination */
@@ -52,7 +141,7 @@ p.date {
 label {
     float: left;
     clear: both;
-    color: #333;
+    color: #c7f2ff;
     margin-bottom: 4px;
 }
 
@@ -88,11 +177,11 @@ input, textarea {
 }
 
     .comment:nth-child(even) {
-        background: #efefef;
+        background-image: linear-gradient(to left, #262626, #006494);
     }
 
     .comment .info {
         font-weight: bold;
         font-size: 12px;
-        color: #666;
+        color: #ffdd63;
     }
