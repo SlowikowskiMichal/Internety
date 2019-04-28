@@ -2,7 +2,10 @@
 {% load blog_tags %}
 {% block title %}{{ post.title }}{% endblock %}
 {% block content %}
-<h1>{{ post.title }}</h1>
+<h2>
+    {{ post.title }}
+</h2>
+
 <p class="date">
     Published {{ post.publish }} by {{ post.author }}
 </p>
@@ -12,11 +15,10 @@
         Share this post
     </a>
 </p>
-<h2>Similar posts</h2> 
+<h3>Similar posts</h3> 
 {% for post in similar_posts %}  
-    <p>    
-        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>  
-    </p> 
+    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>  
+    </br>
 {% empty %}  
     There are no similar posts yet. 
 {% endfor %}
