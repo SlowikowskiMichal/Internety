@@ -49,6 +49,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="blog\tests.py" />
+    <Compile Include="blog\urls.py" />
     <Compile Include="blog\views.py" />
     <Compile Include="blog\__init__.py" />
     <Compile Include="manage.py" />
@@ -61,6 +62,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="blog\static\blog\css\blog.css" />
+    <Content Include="blog\static\blog\logo.png" />
+    <Content Include="blog\static\blog\zdj.jpg" />
+    <Content Include="blog\static\blog\zdj2.jpg" />
     <Content Include="blog\templates\blog\base.html" />
     <Content Include="blog\templates\blog\post\detail.html" />
     <Content Include="blog\templates\blog\post\latest_post.html">
@@ -73,7 +78,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="blog\" />
+    <Folder Include="blog\media\images\" />
     <Folder Include="blog\migrations\" />
+    <Folder Include="blog\media\" />
+    <Folder Include="blog\static\" />
+    <Folder Include="blog\static\blog\" />
+    <Folder Include="blog\static\blog\css\" />
     <Folder Include="blog\templates\blog\post\" />
     <Folder Include="blog\templatetags\" />
     <Folder Include="blog\templates\" />

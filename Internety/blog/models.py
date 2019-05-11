@@ -41,6 +41,7 @@ class Post(models.Model):
     objects = models.Manager()
     published = PublishedManager()
     tags = TaggableManager();
+    image = models.ImageField(upload_to='images',blank=True)
 
 class Comment (models.Model):
     post = models.ForeignKey(Post,
