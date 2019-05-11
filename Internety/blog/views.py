@@ -91,3 +91,11 @@ def post_share(request, post_id):
     return render(request, 'blog/post/share.html', {'post': post,
                                                     'form': form,
                                                     'sent': sent})
+
+def gallery(request):
+    object_list = Post.published.all()  
+    posts = object_list.exclude(image="")
+
+    return render(request,
+                  'blog/gallery.html',
+                  {'posts': posts})

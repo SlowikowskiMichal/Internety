@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+{% load blog_tags %}
+{% block content %}
+<h2>Gallery</h2>
+{% for post in posts %}
+
+    <a href="{{ post.get_absolute_url }}">
+        <img class="gallery" src="http://localhost:8080/media/{{post.image}}" alt="{{post.title}}">
+    </a>
+
+{% endfor %}
+{% endblock %}

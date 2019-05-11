@@ -67,6 +67,9 @@
     <Content Include="blog\static\blog\zdj.jpg" />
     <Content Include="blog\static\blog\zdj2.jpg" />
     <Content Include="blog\templates\blog\base.html" />
+    <Content Include="blog\templates\blog\gallery.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="blog\templates\blog\post\detail.html" />
     <Content Include="blog\templates\blog\post\latest_post.html">
       <SubType>Code</SubType>

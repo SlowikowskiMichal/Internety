@@ -263,3 +263,4 @@ __pycache__/
 /Internety/blog/migrations
 *.sqlite3
 *.png
+/Internety/media/images

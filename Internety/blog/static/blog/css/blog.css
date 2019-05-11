@@ -6,6 +6,16 @@ body {
     color: #ffffff;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img.gallery {
+    max-width: 30%;
+    height: auto;
+}
+
 a.title {
     color: #ffefc2;
     -webkit-text-stroke-width: 1px;
