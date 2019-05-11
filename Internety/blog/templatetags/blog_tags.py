@@ -30,3 +30,7 @@ def get_latest_posts(count=5):
 @register.filter(name='markdown') 
 def markdown_format(text):    
     return mark_safe(markdown.markdown(text))
+
+@register.simple_tag 
+def get_last_photo():
+    return Post.published.exclude(image="").order_by('-publish')[0]

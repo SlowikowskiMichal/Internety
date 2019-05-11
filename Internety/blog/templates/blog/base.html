@@ -22,8 +22,18 @@
         <img class="sidebar" src="{% static "/blog/zdj2.jpg" %}">
         <p>This is my blog. I've written {% total_posts %} posts so far.</p>
         <h3>Gallery</h3>
-        <p>Latest image</p>
+        <p>
+            Latest image
+            <br />
+        {% get_last_photo as last_photo %}
+        {% if last_photo != None %}
+            <a href="{{ last_photo.get_absolute_url }}">
+                <img class="gallery" src="http://localhost:8080/media/{{last_photo.image}}" alt="{{last_photo.title}}">
+            </a>
+            <br />
+        {% endif %}
         <a class="sidebar" href="/blog/gallery/">Show all images</a>
+        </p>
         <h3>Latest posts</h3>
         {% get_latest_posts 3 as latest_posts%}
         <ul> 
