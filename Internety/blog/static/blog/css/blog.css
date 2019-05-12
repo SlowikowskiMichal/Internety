@@ -17,27 +17,32 @@ img {
     overflow: hidden;
     z-index: 999;
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     float: left;
-    clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
-    transition: 0.8s cubic-bezier(1, -1, 0, 2);
+    transition: 0.8s ease;
 }
 
-.img.gallery {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    position: relative;
+.gallery {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    position: center;
+    transition: 1s ease;
 }
+
+    .gallery:hover {
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        object-fit: contain;
+    }
 
 .box:hover {
-    width: 100px;
-    height: 100px;
-    z-index: 1000;
-    position: relative;
-    object-fit: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+        z-index: 1000;
+        position: relative;
+        object-fit: cover;
+        transform:scale(1.5)
 }
 
 a.title {
