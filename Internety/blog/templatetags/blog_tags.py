@@ -33,4 +33,9 @@ def markdown_format(text):
 
 @register.simple_tag 
 def get_last_photo():
-    return Post.published.exclude(image="").order_by('-publish')[0]
+    photoList = Post.published.exclude(image="").order_by('-publish')
+    if photoList.exists():
+        photo = photoList[0]
+    else:
+        photo = ""
+    return photo
